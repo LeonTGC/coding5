@@ -34,6 +34,7 @@ let removed = coffeeOrder.slice(1, 2)
 console.log("slice()", removed)
 
 // map method
+// map is an array method
 coffeeOrder.map((order, index) => {
     console.log(`order number: ${index + 1}, coffee: ${order}`)
 })
