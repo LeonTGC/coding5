@@ -9,7 +9,10 @@ const person = {
         "tron"
     ],
     favDay: 'friday',
+    // functions within object
     isItAGoodDay(){
+        // use of the 'this' keyword
+        // refering to itself
         if(this.favDay === today){
             return 'its a great day'
         } else {
@@ -18,7 +21,7 @@ const person = {
     }
 }
 
-console.log(person.isItAGoodDay())
+
 
 // dot notation
 console.log(person.name)
@@ -29,18 +32,21 @@ console.log(person.name)
 // person.favMovies.push('lotr- return of the king')
 // console.log(person.favMovies)
 
-// const alarm = {
-//     weekendAlarm: 'no alarm needed',
-//     weekdayAlarm: 'get up at 7am'
-// }
+// calling the function inside person object
+console.log(person.isItAGoodDay())
 
-// let day = 'monday'
+const alarm = {
+    weekendAlarm: 'no alarm needed',
+    weekdayAlarm: 'get up at 7am'
+}
 
-// if(day === 'saturday' || day === 'sunday'){
-//     console.log(alarm.weekendAlarm)
-// }else{
-//     console.log(alarm.weekdayAlarm)
-// }
+let day = 'monday'
+
+if(day === 'saturday' || day === 'sunday'){
+    console.log(alarm.weekendAlarm)
+}else{
+    console.log(alarm.weekdayAlarm)
+}
 
 
 
